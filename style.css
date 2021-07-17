@@ -7,9 +7,23 @@
    top: 100px;
    left: 600px;
 }
-.card{
+/*.card{
     position: relative;
     top: 150px;
     left: 300px;  
-    width: auto;
+    width: auto;*/
+
+form{
+    width: 65%;
+    height: 65%;
+    padding: 50px;
+    background-color: #E79925;
+}
+.des-form{
+    display: grid;
+    grid-template-columns: 2fr,2fr;
+    gap:50px;
+ position: relative;
+ top: 200px;
+ left: 100px;
 }
