@@ -15,17 +15,32 @@ section{
     background-image:url(./assets/akanbg.1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh;;
 }
 .desc{
     background-color:#E79925;
     width:35%;
-    height:50%;
-    
+    border-radius: 10%;
+    line-height: 2rem;
+    padding: 30px;
+   line-height: 2rem;
 }
 
 .form{
     background-color:#E79925 ;
-    width: 45%;
+    opacity:0.6;
+    color: #fff;
+    width: 30%;
     text-align: center;
+    border-radius: 10%;
+    height: 70%;
+    line-height: 3rem;
+}
+.desc-form{
+    display:flex;
+    gap:50px;
+    justify-content: center;
+    position: relative;
+    top:70px;
+    
 }
