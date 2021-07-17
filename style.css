@@ -1,29 +1,25 @@
-.nav {
-    background-color:#8D7C8D;
+nav{
+    background-color:#8D7C8D ;
+    height: 40px;
+    width:100%;
 }
 
-.img-fluid{
-   position: relative;
-   top: 100px;
-   left: 600px;
+.container{
+    text-align: center;
 }
-/*.card{
-    position: relative;
-    top: 150px;
-    left: 300px;  
-    width: auto;*/
-
-form{
-    width: 65%;
-    height: 65%;
-    padding: 50px;
-    background-color: #E79925;
+img{
+    position:relative;
+    top: 50px;
 }
-.des-form{
-    display: grid;
-    grid-template-columns: 2fr,2fr;
-    gap:50px;
- position: relative;
- top: 200px;
- left: 100px;
+section{
+    background-image:url(./assets/akanbg.1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.desc{
+    background-color:#E79925;
+    width:35%;
+    height:50%;
+    
 }
