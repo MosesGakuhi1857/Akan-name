@@ -47,17 +47,62 @@ function formulaDay() {
     var yearOfBirth = document.getElementById("yearOfBirth").value;
 
 
-    let CC = parseInt(yearOfBirth.slice(0,2));
+    let CC = parseInt(yearOfBirth.slice(0, 2));
     let YY = parseInt(yearOfBirth.slice(2));
     let MM = parseInt(monthOfBirth);
     let DD = parseInt(dateOfBirth);
 
-    d=(((CC/4) -2*CC-1) + ((5*YY/4))+((26*(MM+1)/10)) + DD)%7;
+    d = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
     console.log(d);
     return (Math.floor(d))
 }
-
-function findGender(){
+//finding akan name
+function findGender() {
     var gender = document.getElementsByName("gender");
 
+    if (gender[0].checked === true) {
+        var gender = "male"
+    } else if (gender[1].checked === true) {
+        var gender = "female"
+    }
+    switch (gender) {
+        case "femaleNames":
+            if (formulaDay === 0) {
+                alert("Your Akan name is " + femaleNames[0]);
+            } else if (formulaDay === 1) {
+                alert("Your Akan name is " + femaleNames[1]);
+            } else if (formulaDay === 2) {
+                alert("Your Akan name is " + femaleNames[2]);
+            } else if (formulaDay === 3) {
+                alert("Your Akan name is " + femaleNames[3]);
+            } else if (formulaDay === 4) {
+                alert("Your Akan name is " + femaleNames[4]);
+            } else if (formulaDay === 5) {
+                alert("Your Akan name is " + femaleNames[5]);
+            } else if (formulaDay === 6) {
+                alert("Your Akan name is " + femaleNames[6]);
+            } else {
+                alert("invalid");
+            }
+            break;
+        case "maleNames":
+            if (formulaDay === 0) {
+                alert("Your Akan name is " + maleNames[0]);
+            } else if (formulaDay === 1) {
+                alert("Your Akan name is " + aleNames[1]);
+            } else if (formulaDay === 2) {
+                alert("Your Akan name is " + maleNames[2]);
+            } else if (formulaDay === 3) {
+                alert("Your Akan name is " + maleNames[3]);
+            } else if (formulaDay === 4) {
+                alert("Your Akan name is " + maleNames[4]);
+            } else if (formulaDay === 5) {
+                alert("Your Akan name is " + maleNames[5]);
+            } else if (formulaDay === 6) {
+                alert("Your Akan name is " + maleNames[6]);
+            } else {
+                alert("invalid");
+            }
+            break;
+    }
 }
