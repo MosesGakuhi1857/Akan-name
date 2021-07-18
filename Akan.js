@@ -38,4 +38,21 @@ function validateForm() {
 }
 
 //end of validation
-    
+
+//formula for finding day of the week 
+
+function formulaDay() {
+    var dateOfBirth = document.getElementById("dateOfBirth").value;
+    var monthOfBirth = document.getElementById("monthOfBirth").value;
+    var yearOfBirth = document.getElementById("yearOfBirth").value;
+
+
+    let CC = parseInt(yearOfBirth.slice(0,2));
+    let YY = parseInt(yearOfBirth.slice(2));
+    let MM = parseInt(monthOfBirth);
+    let DD = parseInt(dateOfBirth);
+
+    d=(((CC/4)- 2*CC-1) + ((5*YY/4))+((26*(MM+1)/10)) + DD)%7;
+    console.log(d);
+    return Math.floor(d)
+}
