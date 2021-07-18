@@ -37,29 +37,29 @@
                     voluptatibus sequi sint odit, dolorem molestias.</p>
             </div>
 
-            <div class="form">
-                <form>
+            <div class="form" >
+                <form name="userForm">
                     <p>KEY IN YOUR DETAILS HERE!</p>
                     <br> <label for="">Date of birth :</label>
 
-                    <input type="text" name="" placeholder="Enter digits"><br>
+                    <input type="text" name="dateOfBirth" placeholder="Enter digits" id="dateOfBirth"> <br>
 
                     <br> <label for="">Month of birth :</label>
 
-                    <input type="text" name="" placeholder="Enter digits"><br>
+                    <input type="text" name="monthOfBirth" placeholder="Enter digits" id="monthOfBirth"><br>
 
                     <br> <label for="">Year of birth :</label>
 
-                    <input type="text" name="" placeholder="Enter digits"> <br>
+                    <input type="text" name="yearOfBirth" placeholder="Enter digits" id="yearOfBirth"> <br>
 
                     <div class=radio>
                         <br> <label for="">Male :</label>
 
-                        <input type="radio" name="">
+                        <input type="radio" name="gender" onclick="validateForm()">
 
                         <label for="">Female :</label>
 
-                        <input type="radio" name=""><br>
+                        <input type="radio" name="gender" onclick="validateForm()"><br>
                     </div>
 
                     <br> <button type="submit">submit</button>
@@ -78,6 +78,8 @@
         <p>Copyright &copy;Moses 2021.All Rights Reserved.
         </p>
     </footer>
+
+    <script src="Akan.js"></script>
 </body>
 
 
