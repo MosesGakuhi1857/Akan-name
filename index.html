@@ -22,47 +22,66 @@
     <section>
 
         <div class="container">
-            <img src="./assets/onlinelogomaker-071621-1358-1356.png" alt="logo" height="200px" width="500px">
+             alt="logo" height="200p<img src="./assets/onlinelogomaker-071621-1358-1356.png"x" width="500px">
         </div>
 
         <div class="desc-form">
             <div class="desc">
                 <h3>About Akan Naming</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, culpa?
-                    Placeat sed officia reprehenderit possimus aliquam et eligendi fugit impedit.
-                    Consectetur excepturi quis odit aperiam pariatur enim qui vel reiciendis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, exercitationem.
-                    Tenetur labore facere sunt enim corrupti quas.
-                    Ratione non beatae fugit, nulla placeat eveniet,
-                    voluptatibus sequi sint odit, dolorem molestias.</p>
+                <p>Akan people from Ghana frequently name their children after days of the week they were born in,below
+                    is a list of namings;
+                <div class="akan-names">
+                    <div>
+                        <h6>male</h6>
+                        <li>sunday - Kwasi</li>
+                        <li>monday - Kwado</li>
+                        <li>tuesday - Kwabena</li>
+                        <li>wednesday - Kwaku</li>
+                        <li>thursday - Yaw</li>
+                        <li>friday - Kofi</li>
+                        <li>saturday - Kwame</li>
+                    </div>
+                    <div>
+                        <h6>female</h6>
+                        <li>sunday - Akosua</li>
+                        <li>monday - Adwoa</li>
+                        <li>tuesday - Abenaa</li>
+                        <li>wednesday - Akua</li>
+                        <li>thursday - Yaa</li>
+                        <li>friday - Afua</li>
+                        <li>saturday - Ama</li>
+                    </div>
+                </div>
+                Based on your birthday what is your <strong>Akan name </strong> ? find out 
+                </p>
             </div>
 
-            <div class="form" >
+            <div class="form">
                 <form name="userForm">
                     <p>KEY IN YOUR DETAILS HERE!</p>
                     <br> <label for="">Date of birth :</label>
 
-                    <input type="text" name="dateOfBirth" placeholder="Enter digits" id="dateOfBirth"> <br>
+                    <input type="text" name="dateOfBirth" placeholder="Enter digits" id="dateOfBirth" required> <br>
 
                     <br> <label for="">Month of birth :</label>
 
-                    <input type="text" name="monthOfBirth" placeholder="Enter digits" id="monthOfBirth"><br>
+                    <input type="text" name="monthOfBirth" placeholder="Enter digits" id="monthOfBirth" required><br>
 
                     <br> <label for="">Year of birth :</label>
 
-                    <input type="text" name="yearOfBirth" placeholder="Enter digits" id="yearOfBirth"> <br>
+                    <input type="text" name="yearOfBirth" placeholder="Enter digits" id="yearOfBirth" required> <br>
 
                     <div class=radio>
                         <br> <label for="">Male :</label>
 
-                        <input type="radio" name="gender" onclick="validateForm()">
+                        <input type="radio" name="gender" onclick="validateForm()" id="male" required>
 
                         <label for="">Female :</label>
 
-                        <input type="radio" name="gender" onclick="validateForm()"><br>
+                        <input type="radio" name="gender" onclick="validateForm()" id="female" required><br>
                     </div>
 
-                    <br> <button type="submit">submit</button>
+                    <br> <button type="submit" onclick="getAkanName()">submit</button>
 
                 </form>
             </div>
