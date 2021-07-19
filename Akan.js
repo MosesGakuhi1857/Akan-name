@@ -34,26 +34,33 @@ function validateForm() {
 //formula for finding day of the week 
 
 function formulaDay() {
-   var dateOfBirth = document.getElementById("dateOfBirth").value;
-   var monthOfBirth = document.getElementById("monthOfBirth").value;
+    var dateOfBirth = document.getElementById("dateOfBirth").value;
+    var monthOfBirth = document.getElementById("monthOfBirth").value;
     var yearOfBirth = document.getElementById("yearOfBirth").value;
 
-    let CC = yearOfBirth.slice(0,2);
+    let CC = yearOfBirth.slice(0, 2);
     let YY = yearOfBirth.slice(2);
     let MM = monthOfBirth;
     let DD = dateOfBirth;
-   // console.log("CC "+CC+"YY "+YY+"MM "+MM+"DD "+DD)
+    // console.log("CC "+CC+"YY "+YY+"MM "+MM+"DD "+DD)
 
     let birthday = yearOfBirth + "-" + monthOfBirth + "-" + dateOfBirth;
     let dayvalue = new Date(birthday);
     console.log(dayvalue);
-    let day= dayvalue.getDay()
-   /*Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7);*/                 //<= this formula is not working on my end
- //(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + DD ) % 7)
-   
- let genders = document.getElementsByName("gender");
-    console.log(day); 
+    let day = dayvalue.getDay()
+
+    /*Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7);*/ //<= this formula is not working on my end
+    //(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + DD ) % 7)
+
+    //end of fomula
+
+    let genders = document.getElementsByName("gender");
     
+    //console.log(day);
+
+
+    //find akan name
+
     if (genders[0].checked === true) {
         var gender = "male"
     } else if (genders[1].checked === true) {
@@ -80,10 +87,10 @@ function formulaDay() {
             }
             break;
         case "male":
-            if (day=== 0) {
+            if (day === 0) {
                 alert("Your Akan name is " + maleNames[0]);
-            } else if (day===1){
-                alert("Your Akan name is " +  maleNames[1]);
+            } else if (day === 1) {
+                alert("Your Akan name is " + maleNames[1]);
             } else if (day === 2) {
                 alert("Your Akan name is " + maleNames[2]);
             } else if (day === 3) {
@@ -100,65 +107,11 @@ function formulaDay() {
             break;
     }
     return Math.floor(day);
-}                                        // (( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + date ) % 7)
-//finding akan name
-/*function getGender() {
-    let genders = document.getElementsByName("gender");
-    console.log(day); 
+} 
 
-    if (genders[0].checked === true) {
-        var gender = "male"
-    } else if (genders[1].checked === true) {
-        var gender = "female"
-    }
-    switch (gender) {
-        case "female":
-            if (day === 0) {
-                alert("Your Akan name is " + femaleNames[0]);
-            } else if (day === 1) {
-                alert("Your Akan name is " + femaleNames[1]);
-            } else if (d === 2) {
-                alert("Your Akan name is " + femaleNames[2]);
-            } else if (day === 3) {
-                alert("Your Akan name is " + femaleNames[3]);
-            } else if (day === 4) {
-                alert("Your Akan name is " + femaleNames[4]);
-            } else if (day === 5) {
-                alert("Your Akan name is " + femaleNames[5]);
-            } else if (day === 6) {
-                alert("Your Akan name is " + femaleNames[6]);
-            } else {
-                alert("invalid");
-            }
-            break;
-        case "male":
-            if (day=== 0) {
-                alert("Your Akan name is " + maleNames[0]);
-            } else if (day===1){
-                alert("Your Akan name is " + aleNames[1]);
-            } else if (day === 2) {
-                alert("Your Akan name is " + maleNames[2]);
-            } else if (day === 3) {
-                alert("Your Akan name is " + maleNames[3]);
-            } else if (day === 4) {
-                alert("Your Akan name is " + maleNames[4]);
-            } else if (day === 5) {
-                alert("Your Akan name is " + maleNames[5]);
-            } else if (day === 6) {
-                alert("Your Akan name is " + maleNames[6]);
-            } else {
-                alert("invalid");
-            }
-            break;
-    }
-}*/
 
-function getAkanName(){
-  let day=formulaDay();
-  console.log(day);
-    //getGender();
-    console.log("about to get akan name");
-    
+function getAkanName() {
+    let day = formulaDay();
+    //console.log(day);
+    // console.log("about to get akan name");
 }
-
-
