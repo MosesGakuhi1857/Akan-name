@@ -1,22 +1,21 @@
-## Project Name Akan Name
+##  AKAN NAMING
 
 ### Project description:
->Akan name webpage is a platform that gives users an opportunity to travel to west africa and get themselves an Akan name based on their birthdays.Akan is a group people in ghana with the culture of naming their child borns based on the days they were born.
+>Akan name webpage is a platform that gives users an opportunity to travel to west africa and get themselves an Akan name based on their birthdays.Akan is a group people in ghana with the culture of naming their child borns based on the days they were born.for instance male children born on sunday are called "Kwasi".
 
 ## author : Moses Gakuhi 
 
 ### Setup Information
-
-* user needs to have access to internet 
-* user should use chrome or prefered browser 
-* github account to access the link below which will 
+* With access to internet one can load the webpage
+*  Use your prefered browser 
+* You also need a github account to access the link below which will load to the webpage
 
 ## link 
 
-[]()
+[click to access site!!](https://mosesgakuhi1857.github.io/Akan-name/)
 
 ### BDD
-for those who have their birthdays in leap year will not have the exact date they were born but it an issue am sorting out. 
+bugs experienced is for persons whose birthdays are in leap year precisely born on 29th february they might not get the exact AKAN name but it an issue am sorting out. 
 
 ### tech used 
 * Html
@@ -25,13 +24,13 @@ for those who have their birthdays in leap year will not have the exact date the
 * java Script
 
 ### contact information
-contact me :  
+buy me coffee:  
 tel +254798015111
 
 ### screenshot of the page:
 
 
-![](./assets/screen.2.png)
+![the site appearance](./assets/screen.2.png)
 
 ### Lincence
 
