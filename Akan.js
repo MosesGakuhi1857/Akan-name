@@ -55,7 +55,7 @@ function formulaDay() {
     //end of fomula
 
     let genders = document.getElementsByName("gender");
-    
+
     //console.log(day);
 
 
@@ -105,13 +105,17 @@ function formulaDay() {
                 alert("invalid");
             }
             break;
+            default:
     }
     return Math.floor(day);
+    
 } 
+
 
 
 function getAkanName() {
     let day = formulaDay();
+   
     //console.log(day);
     // console.log("about to get akan name");
 }
